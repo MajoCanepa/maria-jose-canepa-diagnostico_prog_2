@@ -9,8 +9,14 @@
     <h1><%= title %></h1>
     
     <ul>
-        <% users.forEach(function(user){ %>
-          <%- include('user/show', {user: user}); %>
+        <% posts.forEach(function(post){ %>
+          
+          <li><%= post.id %></li>
+          <li><%= post.title %></li>
+          <li><%= post.description %></li>
+          <li><%= post.author %></li> 
+          <br>
+
         <% }); %>
       </ul>
     <!-- Mostrar los posts aquí -->
